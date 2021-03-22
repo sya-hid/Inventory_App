@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="4dp"
+    android:paddingTop="4dp"
+    android:background="#FFF">
+
+    <ImageView
+        android:id="@+id/imvFood"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/router"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txvJenis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Router"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        style="@style/TextView.PoppinsNormal16sp020202"
+        app:layout_constraintStart_toEndOf="@id/imvFood"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/txvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bullet M5"
+        android:layout_marginStart="12dp"
+        style="@style/TextView.PoppinsNormal13sp8D92A3"
+        app:layout_constraintStart_toEndOf="@id/imvFood"
+        app:layout_constraintTop_toBottomOf="@id/txvJenis"/>
+
+    <ImageView
+        android:id="@+id/btn_min"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/btn_min"
+        android:layout_marginTop="17dp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txvJumlah"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txvJumlah"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="10"
+        style="@style/TextView.PoppinsNormal16sp020202"
+        android:gravity="center"
+        android:layout_marginTop="17dp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_add"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <ImageView
+        android:id="@+id/btn_add"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/btn_add"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="17dp"/>
+
+    <ImageView
+        android:id="@+id/btn_delete"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:src="@drawable/ic_baseline_close_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

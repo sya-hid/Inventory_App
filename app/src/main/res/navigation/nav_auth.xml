@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/nav_auth"
+app:startDestination="@id/fragmentSignIn">
+
+<fragment android:id="@+id/fragmentSignIn"
+    android:name="com.syarifhidayatullah.myapplication.ui.auth.signin.SigninFragment"
+    tools:layout="@layout/fragment_signin">
+
+    <action android:id="@+id/action_signup"
+        app:destination="@+id/fragmentSignUp"/>
+
+</fragment>
+
+<fragment android:id="@+id/fragmentSignUp"
+    android:name="com.syarifhidayatullah.myapplication.ui.auth.signup.SignupFragment"
+    tools:layout="@layout/fragment_signup">
+
+    <action android:id="@+id/action_signup_address"
+        app:destination="@+id/fragmentSignUpAddress"/>
+
+</fragment>
+
+<fragment android:id="@+id/fragmentSignUpAddress"
+    android:name="com.syarifhidayatullah.myapplication.ui.auth.signup.SignupAddressFragment"
+    tools:layout="@layout/fragment_signup_address">
+    <action android:id="@+id/action_signup_success"
+        app:destination="@+id/fragmentSignUpSuccess"/>
+</fragment>
+
+<fragment android:id="@+id/fragmentSignUpSuccess"
+    android:name="com.syarifhidayatullah.myapplication.ui.auth.signup.SignupSuccessFragment"
+    tools:layout="@layout/fragment_signup_success"/>
+
+</navigation>

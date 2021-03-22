@@ -1,0 +1,96 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.syarifhidayatullah.myapplication.ui.report.ReportFragment">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="@drawable/shape_rectangle_8_fff"
+      >
+       <EditText
+           android:id="@+id/selectedDate1"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintEnd_toStartOf="@id/selectedDate2"
+           style="@style/EditText.PoppinsNormal14sp020202"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="6dp"
+           android:layout_marginStart="8dp"
+           android:background="@drawable/shape_rectangle_outline_8_020202"
+
+           android:hint="Tanggal"
+           android:inputType="textEmailAddress"
+           android:padding="10dp" />
+       <EditText
+           android:id="@+id/selectedDate2"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintStart_toEndOf="@id/selectedDate1"
+           app:layout_constraintEnd_toStartOf="@id/selectDate"
+           style="@style/EditText.PoppinsNormal14sp020202"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="6dp"
+           android:layout_marginStart="8dp"
+           android:background="@drawable/shape_rectangle_outline_8_020202"
+           android:hint="Tanggal"
+           android:inputType="textEmailAddress"
+           android:padding="10dp" />
+
+       <Button
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toEndOf="@id/selectedDate2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Cari"
+           android:layout_marginStart="8dp"
+           style="@style/Button.Primary"
+           android:textAllCaps="false"
+           android:id="@+id/selectDate"/>
+
+
+       <TableLayout
+           app:layout_constraintTop_toBottomOf="@id/selectedDate1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/tablelayoutid"
+           android:layout_marginTop="10dp">
+
+           <TableRow
+               android:id="@+id/rowlay"
+               android:background="@android:color/holo_blue_light"
+               android:padding="5dp">
+               <TextView
+                   android:layout_width="100dp"
+                   android:layout_height="wrap_content"
+android:textAlignment="center"
+                   android:text="Kode Transaksi" />
+               <TextView
+                   android:textAlignment="center" android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+
+                   android:text="P. Gudang" />
+               <TextView
+                   android:textAlignment="center" android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="P. Teknisi" />
+           </TableRow>
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/rcvOrderList"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:paddingTop="4dp"
+               android:background="#FFF"
+               tools:listitem="@layout/layout_row"
+               />
+       </TableLayout>
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

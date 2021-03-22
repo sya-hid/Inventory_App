@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="16dp"
+    android:background="#FFF">
+<ImageView
+    android:id="@+id/imvFood"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:layout_marginStart="16dp"
+    android:src="@drawable/image_6"
+    android:scaleType="centerCrop"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/txvNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cherry Health"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        style="@style/TextView.PoppinsNormal16sp020202"
+        app:layout_constraintStart_toEndOf="@id/imvFood"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/txvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IDR 5000"
+        android:layout_marginStart="12dp"
+        style="@style/TextView.PoppinsNormal13sp8D92A3"
+        app:layout_constraintStart_toEndOf="@id/imvFood"
+        app:layout_constraintTop_toBottomOf="@id/txvNama"/>
+
+    <TextView
+        android:id="@+id/txvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        tools:text="June 12, 14:00"
+        style="@style/TextView.PoppinsNormal10sp8D92A3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+        android:id="@+id/txvStatus"
+        style="@style/TextView.PoppinsNormal10spD9435E"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="24dp"
+        android:text="Cancelled"
+
+        tools:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@id/txvDate"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

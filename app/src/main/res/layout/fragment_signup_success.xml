@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ui.auth.signin.SigninFragment">
+
+    <ImageView
+        android:id="@+id/imv_success_signup"
+        android:layout_width="200dp"
+        android:layout_height="290dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/image_6"
+app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+<TextView
+    android:id="@+id/txv_yeay"
+    android:layout_marginTop="30dp"
+    app:layout_constraintTop_toBottomOf="@id/imv_success_signup"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Yeay! Completed"
+    style="@style/TextView.PoppinsNormal20sp020202"/>
+
+    <TextView
+        android:id="@+id/txv_now"
+        style="@style/TextView.PoppinsNormal14sp8D92A3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="80dp"
+        android:text=" Now you are able to order \n some foods as a self-reward "
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txv_yeay" />
+
+    <Button
+        android:id="@+id/btnSuccess"
+        style="@style/Button.Primary"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Find Foods"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txv_now" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

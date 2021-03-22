@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Logistic</string>
+    <string name="title_home">Home</string>
+    <string name="title_order">Transaction</string>
+    <string name="title_profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_trans">TransActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings1.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string-array name="teknisi_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+    <string-array name="jenis_pekerjaan">
+        <item>Installasi</item>
+        <item>Service</item>
+        <item>Cabut Alat</item>
+
+    </string-array>
+    <string-array name="jenis_masuk">
+        <item>Pembelian</item>
+        <item>Pengembalian</item>
+
+    </string-array>
+    <string-array name="jenis_kategori">
+        <item>radio</item>
+        <item>router</item>
+
+
+    </string-array>
+
+</resources>

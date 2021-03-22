@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginLeft="16dp"
+    android:layout_width="180dp"
+
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_rectangle_8_fff">
+<ImageView
+    android:id="@+id/imvPoster1"
+    android:src="@drawable/router"
+    android:layout_width="180dp"
+    android:layout_marginTop="6dp"
+    android:layout_height="120dp"/>
+<TextView
+    android:id="@+id/txvTittle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Cherry Healthy"
+    style="@style/TextView.PoppinsNormal16sp020202"
+    android:layout_marginTop="12dp"
+    android:layout_marginStart="12dp"/>
+<TextView
+    android:id="@+id/txvKategori"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Cherry Healthy"
+    style="@style/TextView.PoppinsNormal14sp8D92A3"
+    android:layout_marginTop="3dp"
+    android:layout_marginStart="12dp"
+    android:layout_marginBottom="12dp"/>
+</LinearLayout>

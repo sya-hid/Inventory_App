@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <navigation xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        app:startDestination="@id/fragmentDetailPeminjaman"
+        android:id="@+id/nav_detail_peminjaman">
+    <fragment
+        android:id="@+id/fragmentDetailPeminjaman"
+        android:name="com.syarifhidayatullah.myapplication.ui.order.detail.DetailPeminjamanFragment"
+        tools:layout="@layout/fragment_detail_peminjaman">
+
+        <argument android:name="data"
+            app:argType="com.syarifhidayatullah.myapplication.model.response.transaction.Data"
+            app:nullable="true"/>
+    </fragment>
+
+</navigation>

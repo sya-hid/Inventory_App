@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    tools:context=".ui.produk.AddProdukActivity">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/linearAddProduk"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <ImageView
+            android:id="@+id/imvProfil"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="26dp"
+            android:src="@drawable/ic_picture_empty" />
+
+        <TextView
+            style="@style/TextView.PoppinsNormal16sp020202"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Kode Barang" />
+
+        <EditText
+            android:id="@+id/edtKodeBarang"
+            style="@style/EditText.PoppinsNormal14sp020202"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/shape_rectangle_outline_8_020202"
+            android:onClick="onClick"
+            android:hint="Tekan Untuk Scan Kode Barang"
+            android:inputType="textEmailAddress"
+            android:padding="10dp" />
+
+        <TextView
+            style="@style/TextView.PoppinsNormal16sp020202"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Nama Barang" />
+
+        <EditText
+            android:id="@+id/edtNamaBarang"
+            style="@style/EditText.PoppinsNormal14sp020202"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/shape_rectangle_outline_8_020202"
+            android:hint="Masukkan Nama Barang"
+            android:inputType="textEmailAddress"
+            android:padding="10dp" />
+
+        <TextView
+            style="@style/TextView.PoppinsNormal16sp020202"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Kategori" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spnKategori"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/shape_rectangle_outline_8_020202" />
+
+        <TextView
+            style="@style/TextView.PoppinsNormal16sp020202"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Jumlah" />
+
+        <EditText
+            android:id="@+id/edtJumlah"
+            style="@style/EditText.PoppinsNormal14sp020202"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/shape_rectangle_outline_8_020202"
+            android:hint="Masukkan jumlah Barang"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <TextView
+            style="@style/TextView.PoppinsNormal16sp020202"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Keterangan" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spnKeterangan"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/shape_rectangle_outline_8_020202" />
+
+        <Button
+            android:id="@+id/btnContinue"
+            style="@style/Button.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:text="Simpan"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+    <FrameLayout
+        android:background="#000000"
+        android:id="@+id/frame_layout_camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="invisible"
+        app:layout_constraintTop_toTopOf="parent">
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>

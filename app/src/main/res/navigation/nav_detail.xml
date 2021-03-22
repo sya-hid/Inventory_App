@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_detail"
+    app:startDestination="@id/fragmentDetail">
+
+    <fragment
+        android:id="@+id/fragmentDetail"
+        android:name="com.syarifhidayatullah.myapplication.ui.detail.DetailFragment"
+        tools:layout="@layout/fragment_detail">
+<!--        <action-->
+<!--            android:id="@+id/action_payment"-->
+<!--            app:destination="@id/fragmentPayment"/>-->
+        <argument
+            android:name="data"
+            app:argType="com.syarifhidayatullah.myapplication.model.response.home.Data"
+            app:nullable="true"/>
+    </fragment>
+<!--    <fragment-->
+<!--        android:id="@+id/fragmentPayment"-->
+<!--        android:name="com.syarifhidayatullah.myapplication.ui.detail.PaymentFragment"-->
+<!--        tools:layout="@layout/fragment_payment">-->
+<!--        <action-->
+<!--            android:id="@+id/action_payment_success"-->
+<!--            app:destination="@id/fragmentPaymentSuccess"/>-->
+<!--    </fragment>-->
+<!--    <fragment-->
+<!--        android:id="@+id/fragmentPaymentSuccess"-->
+<!--        android:name="com.syarifhidayatullah.myapplication.ui.detail.PaymentSuccessFragment"-->
+<!--        tools:layout="@layout/fragment_payment_success"></fragment>-->
+</navigation>
