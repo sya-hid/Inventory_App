@@ -1,5 +1,5 @@
 # Inventory_App
-
+Merupakan aplikasi yang dapat membantu proses keluar/masuk barang menggunakan fitur scan barcode pada proses transaksi. 
 ## Fiture
 #### Home
 1. Tambah Barang (Scan Barcode)
