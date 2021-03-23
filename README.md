@@ -2,10 +2,10 @@
 
 ## Fiture
 ### Home
+1. Tambah Barang
 ### Transaction
+1. Tambah Transaksi
+2. Detail Transaksi
+3. Laporan Transaksi
 ### Profile
-Tambah Barang
-Tambah Transaksi
-Detail Transaksi
-Laporan Transaksi
-Update Profile
+1. Update Profile
