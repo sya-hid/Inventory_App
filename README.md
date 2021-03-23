@@ -1,11 +1,11 @@
 # Inventory_App
 
 ## Fiture
-### Home
+#### Home
 1. Tambah Barang
-### Transaction
+#### Transaction
 1. Tambah Transaksi
 2. Detail Transaksi
 3. Laporan Transaksi
-### Profile
+#### Profile
 1. Update Profile
