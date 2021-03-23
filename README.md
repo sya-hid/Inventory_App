@@ -1,6 +1,6 @@
 # Inventory_App
 
-##Fiture
+## Fiture
 Home
 Transaction
 Profile
